@@ -1,0 +1,319 @@
+/* ========================================================
+                      UNIVERSAL
+========================================================*/
+*{
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.clear:before,
+.clear:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clear:after {
+    clear: both;
+}
+/* ========================================================
+                      NAVIGATION SECTION
+========================================================*/
+
+.navigation-menu {
+  position: fixed;
+  width: 80%;
+  top: 0;
+  bottom: 0;
+  background: -moz-linear-gradient(left, rgba(132,17,0,1) 0%, rgba(132,17,0,0.8) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(132,17,0,1) 0%,rgba(132,17,0,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(132,17,0,1) 0%,rgba(132,17,0,0.8) 100%),
+  url("https://www.shift-capital.com/assets/w1500-q75-p1/7f3a57f8/apropos_cover_buildings.jpg"); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#841100', endColorstr='#cc841100',GradientType=1 ); /* IE6-9 */
+  color: white;
+  z-index: 1000;
+  transform: translate3d(0,0,0);
+  transition: transform 1.5s ease-in-out;
+}
+.active-nav .navigation-menu{
+  transform: translate3d(-100%,0,0);
+}
+.menu-logo{
+  display:block;
+}
+
+.wrapper-menu{
+  padding:40px;
+  margin: 0 auto;
+}
+
+.nav-box{
+  float:left;
+}
+
+.middle{
+  width: 100%;
+  height: 267px;
+}
+
+/* ========================================================
+                      LEFT SECTION
+========================================================*/
+.left-section{
+  width:10%;
+}
+.left-section .menu-logo{
+  color: white;
+  font-size: 40px;
+}
+.left-section p{
+  -ms-transform: rotate(-90deg); /* IE 9 */
+  -ms-transform-origin: 0% 0% 0; /* IE 9 */
+  -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+  -webkit-transform-origin: 0% 0% 0; /* Chrome, Safari, Opera */
+  transform: rotate(-90deg);
+  transform-origin: 0% 0% 0;
+  margin-top: 4em;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+/* ========================================================
+                      MIDDLE SECTION
+========================================================*/
+.middle-section{
+  width:45%;
+}
+
+.middle-section img{
+  width: 100px;
+}
+.main-title{
+  width: 150px;
+}
+
+.main-links li a{
+  font-weight: 100;
+  text-transform: uppercase;
+  margin-top: 0px;
+  text-decoration: none;
+  color: white;
+  list-style: none;
+  font-size: 18px;
+}
+
+.main-links ul{
+  padding-left: 0px !important;
+  text-align: left;
+}
+
+.main-links li{
+  padding-left: 0px !important;
+  list-style: none;
+  line-height: 1.8;
+  width: 40%;
+}
+
+.logo-box li{
+  list-style: none;
+  float: left;
+}
+
+.social-icons ul{
+  margin-top: 8em;
+  padding: 0;
+}
+.sm-logo img{
+  width: 30px;
+  margin-right: 20px;
+}
+/* ========================================================
+                      RIGHT SECTION
+========================================================*/
+.right-section{
+  width:45%;
+  font-weight: 100;
+}
+.section-title{
+  font-weight: 300;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  margin-bottom: 50px;
+}
+.right-section .section-description{
+  line-height: 1.9;
+}
+.newsletter-input{
+  font-weight: 100;
+  font-size: 14px;
+  margin-top:8em;
+}
+.newsletter-input p{
+  margin-bottom: 10px;
+}
+.newsletter-input input{
+  border: 1px solid white;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 5px;
+  color:white;
+  width: 100%;
+}
+
+
+/* ========================================================
+                      HEADER SECTION
+========================================================*/
+.header{
+  position: fixed;
+  top:0;
+  width: 100%;
+  padding: 20px 60px;
+  background: white;
+  z-index: 4;
+}
+
+.header li{
+  list-style: none;
+  display: inline;
+}
+
+.header h3{
+  float: left;
+}
+
+.header img{
+  float: right;
+  width: 100px;
+  margin-right: 0px;
+  padding-top: 0;
+
+}
+
+
+/* ========================================================
+                      VISION SECTION
+========================================================*/
+.vision-section{
+  width:100%;
+  padding: 1em;
+  position: relative;
+  margin: 100px 0px 0px;
+}
+
+.main-section-image{
+  width: 65%;
+  height: 445px;
+  background-color: black;
+  margin-top: 1em;
+  position: relative;
+  left: 30%;
+  z-index: 1;
+  padding: 20px;
+}
+.section-image-text {
+  position: absolute;
+  left: 40px;
+  bottom: -40px;
+  font-size: 70pt;
+  color: white;
+  text-transform: uppercase;
+}
+
+
+.floating-section-text {
+  position: absolute;
+  left: 40px;
+  bottom: 40px;
+  font-size: 14pt;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+.floating-section-box i{
+  position: absolute;
+  left: 60px;
+  bottom: 20px;
+  font-size: 14pt;
+  color: white;
+}
+
+.vision-section-text{
+  position: relative;
+  top: -10em;
+  padding: 30px;
+}
+
+.vision-section-text p{
+  padding-bottom: 50px;
+  font-weight: 300;
+  line-height: 1.9;
+}
+
+.vision-section-final-image{
+  width: 100%;
+  background-color: black;
+  height: 350px;
+  position: relative;
+  top: -10em;
+}
+
+/* ========================================================
+                      FLOATING BOX ANIMATION
+========================================================*/
+.floating-section-box {
+  width: 35%;
+  height: 426px;
+  background-color: #841100;
+  position: relative;
+  top: -300px;
+  left:30px;
+  z-index:-0;
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+  -ms-transform: translateY(20px);
+  transform: translateY(20px);
+  -webkit-transition: all 2.0s ease-out;
+  -ms-transition: all 2.0s ease-out;
+  transition: all 2.0s ease-out;
+}
+.floating-section-box.fade-in{
+  opacity:1;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* ========================================================
+                      FOOTER SECTION
+========================================================*/
+.footer-vision{
+  width: 100%;
+  background-color: #841100;
+  height: 150px;
+  padding: 3em;
+}
+
+.footer-next{
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  float:left;
+  display: inline-block;
+}
+.footer-button{
+  width: 150px;
+  padding: 20px;
+  border: 1px solid white;
+  float: left;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  color: white;
+  text-transform: uppercase;
+  margin-left: 20px;
+  font-size: 14pt;
+  position: relative;
+  top: -23px;
+}
