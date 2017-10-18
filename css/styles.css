@@ -317,3 +317,35 @@
   position: relative;
   top: -23px;
 }
+/* ========================================================
+                      PHOTO GALLERY
+========================================================*/
+.photo-wrapper{
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  top: -200px;
+}
+
+.photo-block{
+  width: 315px;
+  margin: 10px 20px 30px;
+  float: left;
+}
+.photo-pic{
+  width: 100%;
+  background-color: black;
+  height: 445px;
+  margin-bottom: 20px;
+}
+
+.photo-block h2{
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.photo-block h4{
+  text-transform: uppercase;
+  padding-top: 10px;
+  font-weight: 100;
+}
