@@ -1,36 +1,39 @@
 $(function() {
 
-  $(".link-Vision").hover(function(){
-          $(".section-description").html("Bayyinah’s mission is to enrich individuals, families and institutions by making Arabic and Qur’anic studies accessible to the world. All of our programs offer comprehensive study resources to guide our students toward their educational goals. We strongly believe that education in both")
-       }, function(){
-           $(".section-description").html("Default mission statement. ")
+    $(".link-Vision").hover(function () {
+        $(".section-description").html("Bayyinah’s mission is to enrich individuals, families and institutions by making Arabic and Qur’anic studies accessible to the world. All of our programs offer comprehensive study resources to guide our students toward their educational goals. We strongly believe that education in both")
+    }, function () {
+        $(".section-description").html("Default mission statement. ")
     });
-    $(".link-History").hover(function(){
-            $(".section-description").html("Nouman Ali Khan starts Bayyinah from his laptop. He begins teaching Fundamentals of Classical Arabic in the New York and New Jersey areas. Later he launches Tajwid and Reading essentials with Wisam Sharieff.")
-         }, function(){
-             $(".section-description").html("Default mission statement. ")
-      });
-      $(".link-Team").hover(function(){
-              $(".section-description").html("Write up description about the Team Section.")
-           }, function(){
-               $(".section-description").html("Default mission statement. ")
-        });
-        $(".link-Gallery").hover(function(){
-                $(".section-description").html("Write up description about the Gallery Section.")
-             }, function(){
-                 $(".section-description").html("Default mission statement. ")
-          });
-          $(".link-Blog").hover(function(){
-                  $(".section-description").html("Write up description about the Blog Section.")
-               }, function(){
-                   $(".section-description").html("Default mission statement. ")
-            });
+    $(".link-History").hover(function () {
+        $(".section-description").html("Nouman Ali Khan starts Bayyinah from his laptop. He begins teaching Fundamentals of Classical Arabic in the New York and New Jersey areas. Later he launches Tajwid and Reading essentials with Wisam Sharieff.")
+    }, function () {
+        $(".section-description").html("Default mission statement. ")
+    });
+    $(".link-Team").hover(function () {
+        $(".section-description").html("Write up description about the Team Section.")
+    }, function () {
+        $(".section-description").html("Default mission statement. ")
+    });
+    $(".link-Gallery").hover(function () {
+        $(".section-description").html("Write up description about the Gallery Section.")
+    }, function () {
+        $(".section-description").html("Default mission statement. ")
+    });
+    $(".link-Blog").hover(function () {
+        $(".section-description").html("Write up description about the Blog Section.")
+    }, function () {
+        $(".section-description").html("Default mission statement. ")
+    });
 
   var bodyEl = $("body"),
-      navToggleBtn = bodyEl.find(".menu-logo");
+      navToggleBtn = bodyEl.find(".menu-logo"),
+      displayed = true;
 
       navToggleBtn.on("click", function(e){
         bodyEl.toggleClass("active-nav");
+        e.stopPropagation();
+          displayed = !displayed;
         e.preventDefault();
       });
 
@@ -52,4 +55,10 @@ $(function() {
     colorStart: "white",
     colorEnd: "green"
   });
+
+    $(window).click(function() {
+       if (displayed){
+           bodyEl.toggleClass("active-nav");
+       }
+    });
 });
