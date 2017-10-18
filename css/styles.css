@@ -289,8 +289,12 @@
                       FOOTER SECTION
 ========================================================*/
 .footer-vision{
-  width: 100%;
-  background-color: #841100;
+  background: -moz-linear-gradient(left, rgba(132,17,0,1) 0%, rgba(132,17,0,0.8) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(132,17,0,1) 0%,rgba(132,17,0,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(132,17,0,1) 0%,rgba(132,17,0,0.8) 100%),
+  url("/Assets/footer-background2.png")no-repeat; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#841100', endColorstr='#cc841100',GradientType=1 ); /* IE6-9 */
+  background-repeat: no-repeat;
   height: 150px;
   padding: 3em;
 }
