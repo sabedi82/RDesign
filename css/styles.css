@@ -324,16 +324,22 @@
 /* ========================================================
                       PHOTO GALLERY
 ========================================================*/
+.photo-wrapper-parent{
+  text-align: center;
+  display: block;
+}
 .photo-wrapper{
   width: 90%;
   margin: 0 auto;
   position: relative;
   top: -200px;
+  display: inline-block;
+  /*text-align: center;*/
 }
 
 .photo-block{
-  width: 315px;
-  margin: 10px 20px 30px;
+  width: 23%;
+  margin: 10px 1% 30px;
   float: left;
 }
 .photo-pic{
@@ -352,4 +358,22 @@
   text-transform: uppercase;
   padding-top: 10px;
   font-weight: 100;
+}
+
+
+/* ================================================
+                    TIME LINE
+===================================================*/
+
+.timeline-picture{
+  width: 80%;
+  height: 40%;
+  text-align: center;
+  overflow: hidden;
+  margin: 0px auto 70px auto;
+  max-height: 600px;
+}
+.timeline-picture > img{
+  width: 100%;
+  height: auto;
 }

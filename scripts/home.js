@@ -59,6 +59,7 @@ $(function() {
     $(window).click(function() {
        if (displayed){
            bodyEl.toggleClass("active-nav");
+           displayed=!displayed;
        }
     });
 });
