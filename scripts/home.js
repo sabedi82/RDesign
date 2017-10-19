@@ -43,7 +43,7 @@ $(function() {
 
   //Build a scene
   var ourScene = new ScrollMagic.Scene({
-    triggerElement: ".main-section-image",
+    triggerElement: ".main-section-image, .about-section-image",
     triggerHook: "0.1",
     reverse: false
   })
