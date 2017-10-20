@@ -284,7 +284,19 @@
   z-index: 0;
 }
 
-
+.blog-background{
+  background : -moz-linear-gradient(0% 50% 0deg,rgba(0, 0, 0, 0.8) 0%,rgba(0, 0, 0, 0.2) 100%);
+  background : -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%);
+  background : -webkit-gradient(linear,0% 50% ,100% 50% ,color-stop(0,rgba(0, 0, 0, 0.8) ),color-stop(1,rgba(0, 0, 0, 0.2) ));
+  background : -o-linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%);
+  background : -ms-linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000' ,GradientType=0)";
+  background : linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%),
+  url("/Assets/Blog-Background-Image.png")center; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000',endColorstr='#000000' , GradientType=1),
+  background-repeat: no-repeat;
+  z-index: 0;
+}
 
 .main-section-image{
   width: 65%;
@@ -517,25 +529,27 @@
                       PHOTO GALLERY
 ========================================================*/
 .photo-wrapper-parent{
-  text-align: center;
-  display: block;
+  width: 100%;
+
 }
 .photo-wrapper{
   width: 90%;
-  margin: 0 auto;
+  margin: 10px auto;
   position: relative;
   top: -200px;
   display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
+  display: -webkit-flex; /* Safari */
+  align-items: center;
   /*text-align: center;*/
 }
 
 .photo-block{
-  width: 23%;
-  margin: 10px 1% 30px;
+  margin: 10px 20px;
   float: left;
 }
 .photo-pic{
-  width: 100%;
   background-color: black;
   height: 445px;
   margin-bottom: 20px;
@@ -551,7 +565,6 @@
   padding-top: 10px;
   font-weight: 100;
 }
-
 
 /* ================================================
                     TIME LINE
