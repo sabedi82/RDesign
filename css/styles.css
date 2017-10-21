@@ -228,6 +228,7 @@
   z-index: 1;
 }
 
+
 .vision-background{
   background : -moz-linear-gradient(0% 50% 0deg,rgba(0, 0, 0, 0.8) 0%,rgba(0, 0, 0, 0.2) 100%);
   background : -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%);
@@ -402,8 +403,12 @@
 }
 
 .vision-section-text{
-  top: 12em;
+  top: -13em;
+  position: relative;
   padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .vision-section-text p{
@@ -413,11 +418,21 @@
 }
 
 .vision-section-final-image{
+  background : -moz-linear-gradient(0% 50% 0deg,rgba(0, 0, 0, 0.8) 0%,rgba(0, 0, 0, 0.2) 100%);
+  background : -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%);
+  background : -webkit-gradient(linear,0% 50% ,100% 50% ,color-stop(0,rgba(0, 0, 0, 0.8) ),color-stop(1,rgba(0, 0, 0, 0.2) ));
+  background : -o-linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%);
+  background : -ms-linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000' ,GradientType=0)";
+  background : linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%),
+  url("/Assets/Final-vision-image.png")center no-repeat; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000',endColorstr='#000000' , GradientType=1),
+  z-index: 0;
+  margin: 0 auto;
   width: 100%;
-  background-color: black;
   height: 350px;
   position: relative;
-  top: -10em;
+  top: -2em;
 }
 
 /* ========================================================
@@ -530,6 +545,11 @@
 ========================================================*/
 .photo-wrapper-parent{
   width: 100%;
+  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
+  display: -webkit-flex;
+  align-items: center;
 
 }
 .photo-wrapper{
@@ -541,7 +561,7 @@
   display: flex;
   flex-wrap: wrap;
   display: -webkit-flex; /* Safari */
-  align-items: center;
+  justify-content: center;
   /*text-align: center;*/
 }
 
@@ -558,12 +578,14 @@
 .photo-block h2{
   font-weight: 400;
   text-transform: uppercase;
+  margin-bottom: 0px;
 }
 
 .photo-block h4{
   text-transform: uppercase;
   padding-top: 10px;
   font-weight: 100;
+  margin-top: 0px;
 }
 
 /* ================================================

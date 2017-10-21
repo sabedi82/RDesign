@@ -47,7 +47,7 @@ $(function() {
     triggerHook: "0.1",
     reverse: false
   })
-  .setClassToggle(".floating-section-box", "fade-in")
+  .setClassToggle(".floating-section-box, .about-floating-section-box", "fade-in")
   .addTo(controller)
   .addIndicators({
     name: "floating box",
