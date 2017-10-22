@@ -403,7 +403,7 @@
 }
 
 .vision-section-text{
-  top: -13em;
+  top: 3em;
   position: relative;
   padding: 30px;
   display: flex;
@@ -442,8 +442,8 @@
   width: 35%;
   height: 426px;
   background-color: #841100;
-  position: relative;
-  top: -250px;
+  position: absolute;
+  top: 350px;
   float: left;
   z-index:-0;
   opacity: 0;
@@ -556,7 +556,7 @@
   width: 90%;
   margin: 10px auto;
   position: relative;
-  top: -200px;
+  top: 50px;
   display: inline-block;
   display: flex;
   flex-wrap: wrap;
@@ -591,6 +591,9 @@
 /* ================================================
                     TIME LINE
 ===================================================*/
+.history-block{
+  margin-top: 3em;
+}
 
 .timeline-picture{
   width: 80%;
@@ -603,4 +606,45 @@
 .timeline-picture > img{
   width: 100%;
   height: auto;
+}
+
+
+/* ==============================================
+                 MEDIA QURIES
+================================================*/
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+  .section-image-text {
+    /*font-size: 20pt;*/
+  }
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .section-image-text {
+    /*font-size: 20pt;*/
+  }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  .section-image-text {
+    /*font-size: 20pt;*/
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  .section-image-text {
+    font-size: 20pt;
+    bottom: 0;
+  }
+  .main-section-image {
+    height: 250px;
+  }
+  .floating-section-box {
+    height: 256px;
+    top: 276px;
+  }
 }
