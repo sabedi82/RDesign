@@ -428,8 +428,8 @@
   url("../Assets/Final-vision-image.png")center no-repeat; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000',endColorstr='#000000' , GradientType=1);
   z-index: 0;
-  margin: 0 auto;
-  width: 100%;
+  margin: 20px auto;
+  width: 85%;
   height: 350px;
   position: relative;
   top: -2em;
@@ -554,7 +554,7 @@
 }
 .photo-wrapper{
   width: 90%;
-  margin: 10px auto;
+  margin: 10px auto 50px;
   position: relative;
   top: 50px;
   display: inline-block;
@@ -691,7 +691,7 @@
      float: none;
     display: inline-block;
   }
-  
+
   .section-title{
     display: none;
   }

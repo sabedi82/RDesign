@@ -48,13 +48,13 @@ $(function() {
     reverse: false
   })
   .setClassToggle(".floating-section-box, .about-floating-section-box", "fade-in")
-  .addTo(controller)
-  .addIndicators({
+  .addTo(controller);
+  /*.addIndicators({
     name: "floating box",
-    colorTrigger: "red",
-    colorStart: "white",
-    colorEnd: "green"
-  });
+    //colorTrigger: "red",
+    //colorStart: "white",
+    //colorEnd: "green"
+  });*/
 
     $(window).click(function() {
        if (displayed){
