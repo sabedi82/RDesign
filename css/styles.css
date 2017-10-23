@@ -27,7 +27,7 @@
   background: -moz-linear-gradient(left, rgba(132,17,0,1) 0%, rgba(132,17,0,0.8) 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(left, rgba(132,17,0,1) 0%,rgba(132,17,0,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to right, rgba(132,17,0,1) 0%,rgba(132,17,0,0.8) 100%),
-  url("https://www.shift-capital.com/assets/w1500-q75-p1/7f3a57f8/apropos_cover_buildings.jpg"); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  url("../Assets/apropos_cover_buildings.jpg"); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#841100', endColorstr='#cc841100',GradientType=1 ); /* IE6-9 */
   color: white;
   z-index: 1000;
@@ -220,7 +220,7 @@
   background : -ms-linear-gradient(0deg, rgba(0, 0, 0, 0.4) 12.02%, rgba(0, 0, 0, 0.8) 100%);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000' ,GradientType=0)";
   background : linear-gradient(90deg, rgba(0, 0, 0, 0.4) 12.02%, rgba(0, 0, 0, 0.8) 100%),
-  url("/Assets/Main-Background-Image.png");
+  url("../Assets/Main-Background-Image.png");
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000',endColorstr='#000000' , GradientType=1);
   background-repeat: no-repeat;
   background-size: cover;
@@ -237,7 +237,7 @@
   background : -ms-linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000' ,GradientType=0)";
   background : linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%),
-  url("/Assets/Vision-Background-Image.png")no-repeat; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  url("../Assets/Vision-Background-Image.png")no-repeat; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000',endColorstr='#000000' , GradientType=1);
   background-repeat: no-repeat;
   z-index: 0;
@@ -251,7 +251,7 @@
   background : -ms-linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000' ,GradientType=0)";
   background : linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%),
-  url("/Assets/History-Background-Image-1.png")no-repeat; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  url("../Assets/History-Background-Image-1.png")no-repeat; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000',endColorstr='#000000' , GradientType=1);
   background-repeat: no-repeat;
   z-index: 0;
@@ -265,7 +265,7 @@
   background : -ms-linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000' ,GradientType=0)";
   background : linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%),
-  url("/Assets/Team-Background-Image-1.png")no-repeat; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  url("../Assets/Team-Background-Image-1.png")no-repeat; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000',endColorstr='#000000' , GradientType=1);
   background-repeat: no-repeat;
   z-index: 0;
@@ -279,7 +279,7 @@
   background : -ms-linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000' ,GradientType=0)";
   background : linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%),
-  url("/Assets/Gallery-Background-Image.png")center; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  url("../Assets/Gallery-Background-Image.png")center; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000',endColorstr='#000000' , GradientType=1);
   background-repeat: no-repeat;
   z-index: 0;
@@ -293,7 +293,7 @@
   background : -ms-linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000' ,GradientType=0)";
   background : linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%),
-  url("/Assets/Blog-Background-Image.png")center; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  url("../Assets/Blog-Background-Image.png")center; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000',endColorstr='#000000' , GradientType=1);
   background-repeat: no-repeat;
   z-index: 0;
@@ -425,7 +425,7 @@
   background : -ms-linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000' ,GradientType=0)";
   background : linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%),
-  url("/Assets/Final-vision-image.png")center no-repeat; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  url("../Assets/Final-vision-image.png")center no-repeat; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000',endColorstr='#000000' , GradientType=1);
   z-index: 0;
   margin: 0 auto;
@@ -501,7 +501,7 @@
   background: -moz-linear-gradient(left, rgba(132,17,0,1) 0%, rgba(132,17,0,0.8) 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(left, rgba(132,17,0,1) 0%,rgba(132,17,0,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to right, rgba(132,17,0,1) 0%,rgba(132,17,0,0.8) 100%),
-  url("/Assets/footer-background2.png")repeat ; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  url("../Assets/footer-background2.png")repeat ; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#841100', endColorstr='#cc841100',GradientType=1 ); /* IE6-9 */
   background-repeat: repeat;
   height: 150px;
@@ -608,9 +608,12 @@
   height: auto;
 }
 
+.header2 {
+  display: none;
+}
 
 /* ==============================================
-                 MEDIA QURIES
+                 MEDIA QUERIES
 ================================================*/
 
 /* Large desktops and laptops */
@@ -636,6 +639,9 @@
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
+  .navigation-menu {
+    width: 100%;
+  }
   .section-image-text {
     font-size: 20pt;
     bottom: 0;
@@ -646,5 +652,86 @@
   .floating-section-box {
     height: 256px;
     top: 276px;
+  }
+  /*MENU SECTION*/
+  .underline{
+    text-align: left;
+    padding: 0;
+    margin: -42px 0 0 0;
+  }
+  .main-links{
+    width: 10%;
+    padding: 0;
+  }
+  .nav-box{
+    text-align: center;
+    width: 100%;
+  }
+  .left-section{
+    display: none;
+  }
+  .right-section{
+    display: none;
+  }
+  .middle-section>img {
+    width: 80px;
+  }
+  .social-icons ul{
+    /*padding: 0 0 0 20%;*/
+    margin-top: 1em;
+  }
+  .newsletter-input{
+    margin-top: 1em;
+  }
+  .middle{
+    height: 226px;
+  }
+  .logo-box li {
+    list-style: none;
+     float: none;
+    display: inline-block;
+  }
+  
+  .section-title{
+    display: none;
+  }
+
+/*=======================
+ HEADER SECTION
+ =======================*/
+
+  .header {
+    display: none;
+    padding: 0;
+  }
+  .header li{
+    padding: 0;
+    display: inline-block;
+  }
+  .header li:first-child{
+    float: left;
+  }
+  .header ul{
+    text-align: center;
+  width: 100%;
+  }
+  .header2{
+    display: block;
+  }
+  .header2>.menu_class{
+    width: 103px;
+    display: inline-block;
+    padding: 20px 0 0 34px;
+  }
+  .header2>.header_logo_class{
+    width: 100px;
+    display: inline-block;
+    margin: 0 auto;
+    position: fixed;
+    left: 38%;
+    top: 11px;
+  }
+  .header_logo_class>img{
+    width: 92px;
   }
 }
