@@ -159,6 +159,9 @@
   width: 100%;
 }
 
+.middle-section>.newsletter-input{
+  display: none;
+}
 
 /* ========================================================
                       HEADER SECTION
@@ -226,6 +229,9 @@
   background-size: cover;
   height: 415px;
   z-index: 1;
+}
+.about-section-image-mobile{
+  display: none;
 }
 
 
@@ -642,96 +648,168 @@
   .navigation-menu {
     width: 100%;
   }
+
   .section-image-text {
     font-size: 20pt;
     bottom: 0;
   }
+
   .main-section-image {
     height: 250px;
   }
+
   .floating-section-box {
     height: 256px;
     top: 276px;
   }
+
   /*MENU SECTION*/
-  .underline{
+  .underline {
     text-align: left;
     padding: 0;
     margin: -42px 0 0 0;
   }
-  .main-links{
+
+  .main-links {
     width: 10%;
     padding: 0;
   }
-  .nav-box{
+
+  .nav-box {
     text-align: center;
     width: 100%;
   }
-  .left-section{
+
+  .left-section {
     display: none;
   }
-  .right-section{
+
+  .right-section {
     display: none;
   }
-  .middle-section>img {
+
+  .middle-section > img {
     width: 80px;
   }
-  .social-icons ul{
+
+  .social-icons ul {
     /*padding: 0 0 0 20%;*/
     margin-top: 1em;
   }
-  .newsletter-input{
+
+  .newsletter-input {
     margin-top: 1em;
   }
-  .middle{
+
+  .middle {
     height: 226px;
   }
+
   .logo-box li {
     list-style: none;
-     float: none;
+    float: none;
     display: inline-block;
   }
 
-  .section-title{
+  .section-title {
     display: none;
   }
 
-/*=======================
- HEADER SECTION
- =======================*/
+  .middle-section > .newsletter-input {
+    display: block;
+  }
 
+  /*=======================
+   HEADER SECTION
+   =======================*/
   .header {
     display: none;
     padding: 0;
   }
-  .header li{
+
+  .header li {
     padding: 0;
     display: inline-block;
   }
-  .header li:first-child{
+
+  .header li:first-child {
     float: left;
   }
-  .header ul{
+
+  .header ul {
     text-align: center;
-  width: 100%;
+    width: 100%;
   }
-  .header2{
+
+  .header2 {
     display: block;
+    padding-top: 20px;
   }
-  .header2>.menu_class{
-    width: 103px;
+
+  .header2 > .menu_class {
     display: inline-block;
-    padding: 20px 0 0 34px;
+    padding: 32px 0 0 34px;
+    font-size: 9pt;
+    font-weight: 500;
   }
-  .header2>.header_logo_class{
+
+  .header2 > .menu_class > a {
+    border-bottom: 3px solid #841100;
+    padding-bottom: 5px;
+    text-decoration: none;
+    color: #000;
+  }
+
+  .header2 > .header_logo_class {
     width: 100px;
     display: inline-block;
     margin: 0 auto;
-    position: fixed;
-    left: 38%;
-    top: 11px;
+    position: relative;
+    left: 30%;
+    vertical-align: bottom;
   }
-  .header_logo_class>img{
-    width: 92px;
+
+  .header_logo_class > img {
+    width: 100px;
+  }
+
+  .fa-close-button {
+    display: none;
+  }
+
+  /* ========================================================
+                        VISION SECTION
+  ========================================================*/
+  .vision-section {
+    padding: 0;
+  }
+
+  .about-block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: initial;
+    /* top: 7em; */
+  }
+
+  .about-section-image-mobile {
+    display: block;
+    width: 100%;
+    height: 250px;
+  }
+
+  .about-wrapper {
+    display: none;
+  }
+
+  .about-text-wrapper {
+    width: 100%;
+    padding: 2em;
+    position: relative;
+    top: 0;
+    float: none;
+    margin-top: 0;
+    font-weight: 300;
+    text-align: justify;
   }
 }
