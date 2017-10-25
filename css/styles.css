@@ -285,9 +285,11 @@ a{
   background : -ms-linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000' ,GradientType=0)";
   background : linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%),
-  url("../Assets/Vision-Background-Image.png") no-repeat center; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  url("../Assets/Vision-Background-Image2.png") no-repeat center; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000',endColorstr='#000000' , GradientType=1);
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
   z-index: 0;
 }
 
@@ -316,6 +318,8 @@ a{
   url("../Assets/Team-Background-Image-1.png")no-repeat; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000',endColorstr='#000000' , GradientType=1);
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
   z-index: 0;
 }
 
@@ -330,6 +334,8 @@ a{
   url("../Assets/Gallery-Background-Image.png")center; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000',endColorstr='#000000' , GradientType=1);
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
   z-index: 0;
 }
 
@@ -344,6 +350,8 @@ a{
   url("../Assets/Blog-Background-Image.png")center; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000',endColorstr='#000000' , GradientType=1);
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
   z-index: 0;
 }
 
