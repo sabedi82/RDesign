@@ -755,9 +755,10 @@ a{
     /*padding: 0 0 0 20%;*/
     margin-top: 1em;
   }
-  .middle-section>.newsletter-input{
-       display: block;
-    }
+
+  .middle-section > .newsletter-input {
+    display: block;
+  }
 
   /*.middle{
     height: 226px;
@@ -813,7 +814,7 @@ a{
   }
 
   a.white {
-    color: #ffffff!important;
+    color: #ffffff !important;
   }
 
   .header2 > .menu_class > a {
@@ -875,20 +876,24 @@ a{
     font-weight: 300;
     text-align: justify;
   }
+
   .main-section-image {
     width: 100%;
     left: initial;
     margin-top: -80px;
     z-index: 1;
   }
+
   .top-block {
     margin: 0;
   }
-  .section-image-text{
+
+  .section-image-text {
     width: 100%;
     text-align: center;
     left: inherit;
   }
+
   .vision-section-text {
     top: 0;
     position: relative;
@@ -898,19 +903,22 @@ a{
     justify-content: center;
     text-align: justify;
   }
+
   .floating-section-box {
     display: none;
   }
+
   .container {
     max-width: 1024px;
     width: 90%;
     margin: 0 auto;
   }
 
-  .history-block{
+  .history-block {
     display: none;
   }
-  .history-block-mobile{
+
+  .history-block-mobile {
     display: block;
   }
 
@@ -920,15 +928,18 @@ a{
     color: black;
     border-left: 2px solid rgba(0, 0, 0, 0.3);
   }
+
   .timeline-item-vertical p {
     font-size: 1rem;
     color: #585858;
   }
-  .timeline-item-vertical h1{
+
+  .timeline-item-vertical h1 {
     text-transform: uppercase;
     font-weight: 500;
     font-size: 1.6em;
   }
+
   .timeline-item-vertical::before {
     content: attr(data-is);
     position: absolute;
@@ -939,6 +950,7 @@ a{
     font-size: 1.1rem;
     color: #8c8c8c;
   }
+
   .timeline-item-vertical::after {
     width: 10px;
     height: 10px;
@@ -951,9 +963,35 @@ a{
     border: 2px solid #6E6E6E;;
     background: #6E6E6E;
   }
+
   .timeline-item-vertical:last-child {
     -o-border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, transparent) 1 100%;
     border-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3) 60%, transparent) 1 100%;
     border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, transparent) 1 100%;
   }
+
+  /*===========================
+  FOOTERS
+  ============================*/
+  .footer-vision {
+    padding: 3em 0;
+  }
+
+  .footer-next-underline {
+    border-bottom: 5px solid white;
+    padding-bottom: 12px;
+    font-size: 9pt;
+    letter-spacing: 4px;
+    font-weight: 500;
+  }
+  .footer-button {
+    width: 174px;
+    text-transform: capitalize;
+    top: 0;
+    letter-spacing: 4px;
+  }
+  .footer-vision h4 {
+     font-size: 19pt;
+     line-height: 4px;
+   }
 }
