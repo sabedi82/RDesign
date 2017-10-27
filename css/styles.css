@@ -764,16 +764,17 @@ a{
 
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
-  .section-image-text {
-    /*font-size: 20pt;*/
+  .header2 > .header_logo_class {
+    margin-left: 30px;
   }
 }
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
-  .section-image-text {
-    /*font-size: 20pt;*/
+  .header2 > .header_logo_class {
+    margin-left: 30px;
   }
+
 }
 
 /* Landscape phones and portrait tablets */
@@ -849,8 +850,11 @@ a{
 
   .middle-section > .newsletter-input {
     display: block;
+    margin-top: 2em;
   }
-
+  .sm-logo img {
+    margin-right: 20px;
+  }
   /*=======================
    HEADER SECTION
    =======================*/
@@ -899,12 +903,12 @@ a{
   }
 
   .header2 > .header_logo_class {
-    width: 100px;
-    display: inline-block;
+    display: block;
     margin: 0 auto;
-    position: relative;
-    left: 30%;
+    position: absolute;
+    left: calc(45% - 20px);
     vertical-align: bottom;
+    top: 12px;
   }
 
   .header_logo_class > img {
@@ -913,6 +917,44 @@ a{
 
   .fa-close-button {
     display: none;
+  }
+
+
+  /*=============================================
+                      HISTORY
+  =============================================*/
+  .timeline-item-vertical h1 {
+    font-weight: 600;
+  }
+
+
+  /*=============================================
+                      TEAM
+  =============================================*/
+
+  .photo-wrapper {
+    top: 20px;
+  }
+  .photo-block{
+    margin: 10px 20px;
+    float: left;
+    text-align: center;
+  }
+  .photo-pic{
+    height: 180px;
+  }
+  .photo-pic > img{
+    height: 180px;
+    width: 120px;
+  }
+  .photo-title{
+    width: 120px;
+  }
+  .photo-title> h2{
+    font-size: 9pt;
+  }
+  .photo-title> h4{
+    font-size: 9pt;
   }
 
   /* ========================================================
@@ -976,6 +1018,7 @@ a{
     flex-wrap: wrap;
     justify-content: center;
     text-align: justify;
+    font-size: 10pt;
   }
 
   .floating-section-box {
