@@ -125,11 +125,11 @@ a{
 }
 
 .social-icons ul{
-  margin-top: 8em;
+  margin-top: 6em;
   padding: 0;
 }
 .sm-logo img{
-  width: 35px;
+  width: 45px;
   margin-right: 30px;
 }
 /* ========================================================
@@ -224,6 +224,45 @@ a{
   width: 100%;
   height: auto;
   overflow: hidden;
+}
+
+.vision-section-text{
+  top: 4em;
+  position: relative;
+  padding: 50px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+.vision-section-text p{
+  padding-bottom: 0;
+  font-weight: 200;
+  font-size: 1.1em;
+  line-height: 1.9;
+}
+
+.vision-section-text p:last-child {
+  padding-bottom: 60px;
+}
+
+.vision-section-final-image{
+  background : -moz-linear-gradient(0% 50% 0deg,rgba(0, 0, 0, 0.8) 0%,rgba(0, 0, 0, 0.2) 100%);
+  background : -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%);
+  background : -webkit-gradient(linear,0% 50% ,100% 50% ,color-stop(0,rgba(0, 0, 0, 0.8) ),color-stop(1,rgba(0, 0, 0, 0.2) ));
+  background : -o-linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%);
+  background : -ms-linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000' ,GradientType=0)";
+  background : linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%),
+  url("../Assets/Final-vision-image.png") 100% center no-repeat; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000',endColorstr='#000000' , GradientType=1);
+  background-size: 100%;
+  z-index: 0;
+  margin: 20px auto;
+  width: 93%;
+  height: 350px;
+  position: relative;
+  top: -2em;
 }
 
 /* ========================================================
@@ -458,44 +497,7 @@ a{
   color: white;
 }
 
-.vision-section-text{
-  top: 4em;
-  position: relative;
-  padding: 50px 40px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: left;
-}
 
-.vision-section-text p{
-  padding-bottom: 0;
-  font-weight: 200;
-  font-size: 1.1em;
-  line-height: 1.9;
-}
-
-.vision-section-text p:last-child {
-  padding-bottom: 60px;
-}
-
-.vision-section-final-image{
-  background : -moz-linear-gradient(0% 50% 0deg,rgba(0, 0, 0, 0.8) 0%,rgba(0, 0, 0, 0.2) 100%);
-  background : -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%);
-  background : -webkit-gradient(linear,0% 50% ,100% 50% ,color-stop(0,rgba(0, 0, 0, 0.8) ),color-stop(1,rgba(0, 0, 0, 0.2) ));
-  background : -o-linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%);
-  background : -ms-linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%);
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000' ,GradientType=0)";
-  background : linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%),
-  url("../Assets/Final-vision-image.png") 100% center no-repeat; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000',endColorstr='#000000' , GradientType=1);
-  background-size: 100%;
-  z-index: 0;
-  margin: 20px auto;
-  width: 93%;
-  height: 350px;
-  position: relative;
-  top: -2em;
-}
 
 .department-title {
   text-transform: uppercase;
@@ -651,6 +653,8 @@ a{
   justify-content: flex-start;
   align-items: center;
   flex: 1 1 auto;
+  margin: 20px auto 110px;
+  margin-top: 20px;
 }
 
 .photo-block{
@@ -663,7 +667,7 @@ a{
 .photo-pic{
   width: 203px;
   background-color: black;
-  height: 260px;
+  height: 300px;
   margin-bottom: 20px;
 }
 
@@ -714,7 +718,7 @@ a{
 .history-block-mobile{
   max-width: 1220px;
   margin: 0 auto;
-  padding: 2em;
+  padding: 1em;
   position: relative;
   padding-top: 100px;
 }
@@ -775,8 +779,14 @@ a{
   position: relative;
   padding: 50px 40px;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
-.gallery-section-image{
+
+.gallery-section{
+padding: 50px 60px;
+}
+.live-events-gallery{
   background : -moz-linear-gradient(0% 50% 0deg,rgba(0, 0, 0, 0.8) 0%,rgba(0, 0, 0, 0.2) 100%);
   background : -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%);
   background : -webkit-gradient(linear,0% 50% ,100% 50% ,color-stop(0,rgba(0, 0, 0, 0.8) ),color-stop(1,rgba(0, 0, 0, 0.2) ));
@@ -784,17 +794,66 @@ a{
   background : -ms-linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000' ,GradientType=0)";
   background : linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%),
-  url("../Assets/Final-vision-image.png") 100% center no-repeat; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  url("../Assets/live-events-bg.jpg") 100% center no-repeat; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000',endColorstr='#000000' , GradientType=1);
+  background-size: 100%;
+  z-index: 1;
+  background-position: 40% 50%;
+  margin: 20px auto;
+  width: 100%;
+  height: 350px;
+  /*position: relative;
+  top: -2em;*/
+}
+.life-events-gallery::before {
+  display: block;
+  height: 350px;
+  width: 100%;
+  background-color: #841100;
+  position: absolute;
+  top:2em;
+  content: '';
+  z-index: 0;
+}
+
+.behind-the-scenes-gallery{
+  background : -moz-linear-gradient(0% 50% 0deg,rgba(0, 0, 0, 0.8) 0%,rgba(0, 0, 0, 0.2) 100%);
+  background : -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%);
+  background : -webkit-gradient(linear,0% 50% ,100% 50% ,color-stop(0,rgba(0, 0, 0, 0.8) ),color-stop(1,rgba(0, 0, 0, 0.2) ));
+  background : -o-linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%);
+  background : -ms-linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000' ,GradientType=0)";
+  background : linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%),
+  url("../Assets/behind-the-scenes-bg.jpg") 100% center no-repeat; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000',endColorstr='#000000' , GradientType=1);
   background-size: 100%;
   z-index: 0;
+  background-position: 40% 50%;
   margin: 20px auto;
-  width: 93%;
+  width: 100%;
   height: 350px;
-  position: relative;
-  top: -2em;
+  /*position: relative;
+  top: -2em;*/
 }
-
+.student-life-gallery{
+  background : -moz-linear-gradient(0% 50% 0deg,rgba(0, 0, 0, 0.8) 0%,rgba(0, 0, 0, 0.2) 100%);
+  background : -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%);
+  background : -webkit-gradient(linear,0% 50% ,100% 50% ,color-stop(0,rgba(0, 0, 0, 0.8) ),color-stop(1,rgba(0, 0, 0, 0.2) ));
+  background : -o-linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%);
+  background : -ms-linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000' ,GradientType=0)";
+  background : linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%),
+  url("../Assets/student-life-bg.jpg") 100% center no-repeat; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000',endColorstr='#000000' , GradientType=1);
+  background-size: 100%;
+  z-index: 0;
+  background-position: 40% 50%;
+  margin: 20px auto;
+  width: 100%;
+  height: 350px;
+  /*position: relative;
+  top: -2em;*/
+}
 .cross {
   display: none;
 }
@@ -808,6 +867,93 @@ a{
   margin-right: 0;
 }
 
+
+/* ================================================
+                    BLOG LINE
+===================================================*/
+.blog-wrapper{
+  top: 3em;
+  position: relative;
+  padding: 70px 80px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+}
+
+.blog-article{
+  width: 50%;
+  padding: 20px;
+  margin: 0 auto 50px;
+}
+
+.blog-article-background{
+  width: 445px;
+  height: 313px;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.blog-card{
+  width: 400px;
+  height: 161px;
+  background-color: white;
+  padding: 15px;
+}
+
+.blog-border{
+  background-color: #841100;
+  height: 10px;
+  width: 100%;
+  overflow: hidden;
+  transition: all .5s linear;
+}
+
+.blog-border:hover:before {
+  left: -10px;  
+}
+
+.blog-border:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -200%;
+  background: white;
+  height: 100%;
+  width: 120%;
+  transform: skew(-15deg);
+  z-index: -1;
+  transition: all .5s linear;
+}{
+
+}
+
+.article-one .blog-article-background{
+  background-image:url("../Assets/article-one-bg.jpg");
+  background-size: 100%;
+  background-position: 50% 50%;
+}
+
+.article-two .blog-article-background{
+  background-image:url("../Assets/article-two-bg.jpg");
+  background-size: 100%;
+  background-position: 50% 50%;
+}
+
+.article-three .blog-article-background{
+  background-image:url("../Assets/article-three-bg.jpg");
+  background-size: 100%;
+  background-position: 50% 50%;
+}
+
+.article-four .blog-article-background{
+  background-image:url("../Assets/article-four-bg.jpg");
+  background-size: 100%;
+  background-position: 50% 50%;
+}
 
 /* ==============================================
                  MEDIA QUERIES
