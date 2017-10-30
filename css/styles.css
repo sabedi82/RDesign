@@ -155,9 +155,6 @@ a{
   font-size: 14px;
   margin-top: 7em;
 }
-.middle-section>.newsletter-input{
-  display: none;
-}
 
 .newsletter-input p{
   margin-bottom: 15px;
@@ -798,6 +795,19 @@ a{
   top: -2em;
 }
 
+.cross {
+  display: none;
+}
+.term_links{
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 10pt;
+}
+
+.sm-logo:last-child>a>img{
+  margin-right: 0;
+}
+
 
 /* ==============================================
                  MEDIA QUERIES
@@ -805,28 +815,394 @@ a{
 
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
+  .newsletter-input-tab{
+    display: none;
+  }
+  .newsletter-input{
+    display: block;
+  }
+
   .section-image-text {
     /*font-size: 20pt;*/
   }
+
 }
 
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
+
+  .photo-wrapper{
+    padding: 0 20px;
+  }
+  .newsletter-input-tab{
+    display: none;
+  }
+
   .header2 > .header_logo_class {
     margin-left: 30px;
+  }
+  .cross {
+    display: block;
+  }
+  .footer-button {
+    width: 174px;
+    text-transform: capitalize;
+    top: 0;
+    letter-spacing: 4px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    left: -7%;
+    vertical-align: bottom;
   }
 }
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
-  .header2 > .header_logo_class {
-    margin-left: 30px;
+  .photo-wrapper{
+    padding: 0 20px;
   }
 
+  .newsletter-input{
+    display: none;
+  }
+  .newsletter-input-tab{
+    display: block;
+    font-weight: 100;
+    font-size: 19px;
+    margin-top: 7em;
+  }
+
+  .newsletter-input-tab p{
+    margin-bottom: 15px;
+  }
+  .newsletter-input-tab input{
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 10px;
+    color:white;
+    width: 100%;
+  }
+
+  .navigation-menu {
+    width: 100%;
+  }
+
+  .section-image-text {
+    font-size: 20pt;
+    bottom: 0;
+  }
+
+  .main-section-image {
+    height: 350px;
+  }
+
+  .floating-section-box {
+    height: 256px;
+    top: 276px;
+  }
+
+  /*MENU SECTION*/
+  .underline {
+    display: none;
+  }
+  a.menu-logo>.fa-close{
+    display: none;
+  }
+  .cross{
+    font-weight: 100;
+    /*font-family: unset;*/
+    display: block;
+  }
+  .main-links {
+    width: 10%;
+    padding: 0;
+  }
+
+  .middle-section {
+    text-align: center;
+    width: 90%;
+  }
+
+  .left-section .menu-logo, .left-section {
+    color: rgba(255,255,255,0.6)
+  }
+
+  .right-section {
+    display: none;
+  }
+
+  .middle-section > img {
+    width: 120px;
+  }
+
+  .social-icons ul {
+    /*padding: 0 0 0 20%;*/
+    margin-top: 1em;
+  }
+
+  /*.middle{
+    height: 226px;
+  }*/
+  .logo-box li {
+    list-style: none;
+    float: none;
+    display: inline-block;
+  }
+
+  .section-title {
+    display: none;
+  }
+
+  .middle-section > .newsletter-input-tab {
+    display: block;
+    margin-top: 2em;
+  }
+  .sm-logo img {
+    width: 50px;
+    margin-right: 20px;
+  }
+  /*=======================
+   HEADER SECTION
+   =======================*/
+  .header {
+    display: none;
+    padding: 0;
+  }
+
+  .header li {
+    padding: 0;
+    display: inline-block;
+  }
+
+  .header li:first-child {
+    float: left;
+  }
+
+  .header ul {
+    text-align: center;
+    width: 100%;
+  }
+
+  .header2 {
+    display: block;
+    padding-top: 15px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .header2 > .menu_class {
+    display: inline-block;
+    padding: 32px 0 0 34px;
+    font-size: 9pt;
+    font-weight: 500;
+  }
+
+  a.white {
+    color: #ffffff !important;
+  }
+
+  .header2 > .menu_class > a {
+    border-bottom: 3px solid #841100;
+    padding-bottom: 5px;
+    text-decoration: none;
+    color: #000;
+  }
+
+  .header2 > .header_logo_class {
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    left: calc(45% - 20px);
+    vertical-align: bottom;
+    top: 12px;
+  }
+
+  .header_logo_class > img {
+    width: 140px;
+  }
+
+  .fa-close-button {
+    display: none;
+  }
+
+
+  /*=============================================
+                      HISTORY
+  =============================================*/
+  .timeline-item-vertical h1 {
+    font-weight: 600;
+  }
+
+
+  /*=============================================
+                      TEAM
+  =============================================*/
+
+  .photo-wrapper {
+    top: 20px;
+  }
+  .photo-block{
+    margin: 10px 20px;
+    float: left;
+    text-align: center;
+  }
+  .photo-pic{
+    height: 180px;
+  }
+  .photo-pic > img{
+    height: 180px;
+    width: 120px;
+  }
+  .photo-title{
+    width: 120px;
+  }
+  .photo-title> h2{
+    font-size: 9pt;
+  }
+  .photo-title> h4{
+    font-size: 9pt;
+  }
+
+  /* ========================================================
+                        VISION SECTION
+  ========================================================*/
+  .vision-section {
+    padding: 0;
+  }
+
+  .about-block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: initial;
+    /* top: 7em; */
+  }
+
+  .about-section-image-mobile {
+    display: block;
+    width: 100%;
+    height: 250px;
+    margin: 50px 0 0 0;
+  }
+
+  .about-wrapper {
+    display: none;
+  }
+
+  .about-text-wrapper {
+    width: 100%;
+    padding: 2em;
+    position: relative;
+    top: 0;
+    float: none;
+    margin-top: 0;
+    font-weight: 300;
+    text-align: justify;
+    left: auto;
+  }
+
+  .main-section-image {
+    width: 100%;
+    left: initial;
+    margin-top: -80px;
+    z-index: 1;
+  }
+
+  .top-block {
+    margin: 0;
+  }
+
+  .section-image-text {
+    width: 100%;
+    text-align: center;
+    left: inherit;
+  }
+
+  .vision-section-text {
+    top: 0;
+    position: relative;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: justify;
+    font-size: 10pt;
+  }
+
+  .floating-section-box {
+    display: none;
+  }
+
+  .container {
+    max-width: 1024px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+
+  /*===========================
+  FOOTERS
+  ============================*/
+  .footer-vision {
+    padding: 3em 0;
+  }
+
+  .footer-next-underline {
+    border-bottom: 5px solid white;
+    padding-bottom: 12px;
+    font-size: 9pt;
+    letter-spacing: 4px;
+    font-weight: 500;
+  }
+  .footer-button {
+    width: 174px;
+    text-transform: capitalize;
+    top: 0;
+    letter-spacing: 4px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    left: -6%;
+    vertical-align: bottom;
+  }
+  .footer-vision h4 {
+    font-size: 19pt;
+    line-height: 4px;
+  }
+
+  .header2 > .header_logo_class {
+    /*margin-left: 30px;*/
+  }
+  .about-block{
+    height: auto;
+  }
 }
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
+  .photo-wrapper{
+    padding: 0 20px;
+  }
+
+  .about-block{
+    height: auto;
+  }
+  .left-section .menu-logo, .left-section {
+    color: rgba(255,255,255,0.6)
+  }
+
+  a.menu-logo>.fa-close{
+    display: none;
+  }
+
+  .cross {
+    display: block;
+  }
+
+  .newsletter-input-tab{
+    display: none;
+  }
   .navigation-menu {
     width: 100%;
   }
@@ -850,6 +1226,7 @@ a{
     text-align: left;
     padding: 0;
     margin: -42px 0 0 0;
+    display: none;
   }
 
   .main-links {
@@ -857,30 +1234,27 @@ a{
     padding: 0;
   }
 
-  .nav-box {
+  .middle-section {
     text-align: center;
-    width: 100%;
+    width: 90%;
+  }
+  .middle-section > img {
+    width: 80px;
   }
 
   .left-section {
-    display: none;
+    width: 10%;
+    /*display: none;*/
   }
 
   .right-section {
     display: none;
   }
 
-  .middle-section > img {
-    width: 80px;
-  }
 
   .social-icons ul {
     /*padding: 0 0 0 20%;*/
     margin-top: 1em;
-  }
-
-  .middle-section > .newsletter-input {
-    display: block;
   }
 
   /*.middle{
@@ -1024,6 +1398,7 @@ a{
     display: block;
     width: 100%;
     height: 250px;
+    margin: 50px 0 0 0;
   }
 
   .about-wrapper {
@@ -1039,6 +1414,7 @@ a{
     margin-top: 0;
     font-weight: 300;
     text-align: justify;
+    left: auto;
   }
 
   .main-section-image {
@@ -1099,6 +1475,11 @@ a{
     text-transform: capitalize;
     top: 0;
     letter-spacing: 4px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    left: -7%;
+    vertical-align: bottom;
   }
   .footer-vision h4 {
      font-size: 19pt;
