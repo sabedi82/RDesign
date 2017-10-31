@@ -292,8 +292,23 @@ a{
 .about-section-image-mobile{
   display: none;
 }
+.about-background{
+  background : -moz-linear-gradient(0% 50% 0deg,rgba(0, 0, 0, 0.8) 0%,rgba(0, 0, 0, 0.2) 100%);
+  background : -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%);
+  background : -webkit-gradient(linear,0% 50% ,100% 50% ,color-stop(0,rgba(0, 0, 0, 0.8) ),color-stop(1,rgba(0, 0, 0, 0.2) ));
+  background : -o-linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%);
+  background : -ms-linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000' ,GradientType=0)";
+  background : linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%),
+  url("../Assets/about-background.jpg") no-repeat center; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000',endColorstr='#000000' , GradientType=1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: 0;
+}
 
-.about-block-bottom{
+/*.about-block-bottom{
   width: 300px;
   display: flex;
   justify-content: center;
@@ -315,7 +330,7 @@ a{
   background-repeat: no-repeat;
   height: 415px;
   z-index: 1;
-}
+}*/
 
 .vision-background{
   background : -moz-linear-gradient(0% 50% 0deg,rgba(0, 0, 0, 0.8) 0%,rgba(0, 0, 0, 0.2) 100%);
@@ -880,11 +895,15 @@ padding: 50px 60px;
   flex-wrap: wrap;
   width: 100%;
   height: auto;
+  align-items: center;
   justify-content: center;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .blog-article{
   width: 50%;
+  height: 313px;
   padding: 20px;
   margin: 0 auto 50px;
 
@@ -892,23 +911,36 @@ padding: 50px 60px;
 
 .blog-article-background{
   width: 445px;
-  height: 313px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: flex-end;
+
 }
 .blog-card{
   width: 400px;
   height: 161px;
   background-color: white;
   padding: 15px;
-  transition: all .5s ease;
 }
 
-.blog-card:hover{
+.blog-article a{
+  color: #000;
+  text-decoration: none;
+}
+
+.blog-card h2{
+  font-weight: 700;
+}
+
+.blog-card p{
+  font-weight: 200;
+}
+
+/*.blog-card:hover{
   transform: translate(1px, 1px)
              scale(1.01);
-}
+}*/
 
 .border-wrapper{
   overflow: hidden;
@@ -953,6 +985,81 @@ padding: 50px 60px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
+/* ================================================
+                    BLOG - Article One
+===================================================*/
+
+.a1-hero-background {
+  width: 100%;
+  max-width: 1280px;
+  height: 699px;
+  background-image: url("../Assets/article-one-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.a2-hero-background{
+  width: 100%;
+  max-width: 1280px;
+  height: 699px;
+  background-image: url("../Assets/article-two-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.a3-hero-background{
+  width: 100%;
+  max-width: 1280px;
+  height: 699px;
+  background-image: url("../Assets/article-three-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.a4-hero-background{
+  width: 100%;
+  max-width: 1280px;
+  height: 699px;
+  background-image: url("../Assets/article-four-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.blog-body-wrapper{
+  padding: 70px 80px;
+}
+
+.blog-main-body p{
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.blog-top-half h2{
+  font-size: 30px;
+}
+
+.video-wrapper{
+  width: 960px;
+  margin: 40px auto;
+}
+
+.youtube-icon-title{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.youtube-icon-title img{
+    width: 54px;
+    margin-right: 20px;
+}
+
+.youtube-icon-title h3{
+    color: #8e8e8e;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+
 
 /* ==============================================
                  MEDIA QUERIES
