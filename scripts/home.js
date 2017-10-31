@@ -65,6 +65,17 @@ $(function () {
      //colorEnd: "green"
      });*/
 
+
+/* Blog border animation */
+    $( ".blog-card" ).hover(
+      function() {
+        $( this ).find(".blog-border" ).css( "left" , "0%" );
+      }, function() {
+        $(this).find(".blog-border" ).css( "left", "-100%" );
+      }
+    );
+
+
     $(window).click(function () {
         if (displayed) {
             bodyEl.toggleClass("active-nav");

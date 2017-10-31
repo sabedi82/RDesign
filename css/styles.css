@@ -887,12 +887,12 @@ padding: 50px 60px;
   width: 50%;
   padding: 20px;
   margin: 0 auto 50px;
+
 }
 
 .blog-article-background{
   width: 445px;
   height: 313px;
-  background-color: grey;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -904,55 +904,48 @@ padding: 50px 60px;
   padding: 15px;
 }
 
+.border-wrapper{
+  overflow: hidden;
+  height: 20px;
+  width:100%;
+}
 .blog-border{
   background-color: #841100;
   height: 10px;
   width: 100%;
+  position: relative;
+  left: -100%;
   overflow: hidden;
-  transition: all .5s linear;
-}
-
-.blog-border:hover:before {
-  left: -10px;  
-}
-
-.blog-border:before {
+  transition: left .5s ease;
   content: "";
-  position: absolute;
-  top: 0;
-  left: -200%;
-  background: white;
-  height: 100%;
-  width: 120%;
-  transform: skew(-15deg);
-  z-index: -1;
-  transition: all .5s linear;
-}{
-
 }
 
 .article-one .blog-article-background{
   background-image:url("../Assets/article-one-bg.jpg");
   background-size: 100%;
   background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 
 .article-two .blog-article-background{
   background-image:url("../Assets/article-two-bg.jpg");
   background-size: 100%;
   background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 
 .article-three .blog-article-background{
   background-image:url("../Assets/article-three-bg.jpg");
   background-size: 100%;
   background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 
 .article-four .blog-article-background{
   background-image:url("../Assets/article-four-bg.jpg");
   background-size: 100%;
   background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 
 /* ==============================================
