@@ -902,6 +902,12 @@ padding: 50px 60px;
   height: 161px;
   background-color: white;
   padding: 15px;
+  transition: all .5s ease;
+}
+
+.blog-card:hover{
+  transform: translate(1px, 1px)
+             scale(1.01);
 }
 
 .border-wrapper{
