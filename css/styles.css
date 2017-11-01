@@ -1089,7 +1089,7 @@ padding: 50px 60px;
 }
 
 .video-wrapper{
-  width: 960px;
+  /*width: 960px;*/
   margin: 40px auto;
 }
 
@@ -1097,7 +1097,6 @@ padding: 50px 60px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  ma
 }
 
 .youtube-icon-title img{
@@ -1110,7 +1109,6 @@ padding: 50px 60px;
     text-transform: uppercase;
     display: inline-block;
 }
-
 
 
 /* ==============================================
@@ -1163,6 +1161,37 @@ padding: 50px 60px;
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
+
+  /* ========================================
+  BLOGS
+  ==================================*/
+
+  .blog-card {
+    width: 90%;
+  }
+  .blog-article {
+    width: 50%;
+  }
+  .blog-wrapper {
+    padding: inherit;
+  }
+  .blog-article-background {
+    width: 100%;
+  }
+  .blog-card h2 {
+    font-size: 14pt;
+    font-weight: 700;
+  }
+  .blog-body-wrapper {
+    padding: 10px 30px;
+  }
+  iframe{
+    height: 500px;
+  }
+  .blog-top-half h2 {
+    font-size: 28px;
+  }
+  /*=================*/
   .photo-wrapper{
     padding: 0 20px;
   }
@@ -1485,6 +1514,45 @@ padding: 50px 60px;
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
+  /*==============================
+  BLOG
+  ===============================*/
+  .blog-card {
+    width: 90%;
+  }
+  .blog-article {
+    width: 100%;
+  }
+  .blog-wrapper {
+    padding: inherit;
+  }
+  .blog-article-background {
+    width: 100%;
+  }
+  .blog-card h2 {
+    font-size: 14pt;
+    font-weight: 700;
+  }
+  .a1-hero-background {
+    width: 100%;
+    max-width: 1280px;
+    height: 230px;
+    max-height: 700px;
+  }
+  .blog-body-wrapper {
+    padding: 10px 20px;
+  }
+  .blog-title-holder .social-icons {
+    padding: 0 50px;
+    width: 100%;
+  }
+  .blog-top-half h2 {
+    font-size: 19px;
+  }
+  iframe{
+    height: 260px;
+  }
+  /*=============================*/
   .photo-wrapper{
     padding: 0 20px;
   }
