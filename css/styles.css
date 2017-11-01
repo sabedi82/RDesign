@@ -118,7 +118,7 @@ a{
 }
 
 .main-links li a{
-  font-weight: 100;
+  font-weight: 200;
   text-transform: uppercase;
   margin-top: 0px;
   text-decoration: none;
@@ -697,8 +697,8 @@ a{
   width: 100%;
   padding: 0 60px;
   margin: 10px auto 50px;
-  position: relative;
-  top: 50px;
+  /*position: relative;
+  top: 50px;*/
   display:-webkit-flex;
   display: flex;
   flex-wrap: wrap;
@@ -710,7 +710,7 @@ a{
 }
 
 .photo-block{
-  margin: 30px 45px;
+  margin: 50px 45px;
   width: 200px;
   height: 337px;
   text-align: center;
@@ -718,7 +718,7 @@ a{
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  flex:1;
+  flex: 1 1 auto;
 }
 
 .photo-pic{
@@ -1005,11 +1005,12 @@ padding: 50px 60px;
   background-size: 100%;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+
 }
 
 .article-two .blog-article-background{
   background-image:url("../Assets/article-two-bg.jpg");
-  background-size: 100%;
+  background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
@@ -1033,10 +1034,12 @@ padding: 50px 60px;
 
 .a1-hero-background {
   width: 100%;
+  margin:0 auto;
   max-width: 1280px;
   height: 699px;
   background-image: url("../Assets/article-one-bg.jpg");
   background-size: cover;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
 }
 .a2-hero-background{
@@ -1046,6 +1049,7 @@ padding: 50px 60px;
   background-image: url("../Assets/article-two-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .a3-hero-background{
@@ -1055,6 +1059,7 @@ padding: 50px 60px;
   background-image: url("../Assets/article-three-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .a4-hero-background{
@@ -1064,6 +1069,7 @@ padding: 50px 60px;
   background-image: url("../Assets/article-four-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .blog-title-holder .social-icons{
@@ -1096,7 +1102,7 @@ padding: 50px 60px;
 }
 
 .video-wrapper{
-  /*width: 960px;*/
+  width: 960px;
   margin: 40px auto;
 }
 
@@ -1388,11 +1394,14 @@ padding: 50px 60px;
 
   .photo-wrapper {
     top: 20px;
+    padding: 0;
   }
   .photo-block{
-    margin: 10px auto;
+    margin: 10px 20px;
     float: left;
     text-align: center;
+    flex: 1 1 auto;
+    height: auto;
   }
   .photo-pic{
     height: 180px;
@@ -1526,7 +1535,11 @@ padding: 50px 60px;
     height: auto;
   }
 }
-
+/* BLOG */
+.video-wrapper{
+  width: 100%;
+  height: auto;
+}
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
   /*==============================
@@ -1569,7 +1582,8 @@ padding: 50px 60px;
   }
   /*=============================*/
   .photo-wrapper{
-    padding: 0 20px;
+    padding: 0;
+
   }
 
   .about-block{
@@ -1751,11 +1765,14 @@ padding: 50px 60px;
 
   .photo-wrapper {
     top: 20px;
+    width: 30vh;
   }
   .photo-block{
     margin: 10px 20px;
     float: left;
     text-align: center;
+    flex: 1 1 auto;
+    height:auto;
   }
   .photo-pic{
     height: 180px;
@@ -1881,4 +1898,15 @@ padding: 50px 60px;
      font-size: 19pt;
      line-height: 4px;
    }
+}
+
+
+@media (min-width: 360px) and (max-width: 766px) {
+.photo-block{
+  width: 38%;
+  }
+.photo-block{
+  display: block;
+  }
+
 }
