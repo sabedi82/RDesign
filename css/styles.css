@@ -1373,7 +1373,14 @@ padding: 50px 60px;
   .timeline-item-vertical h1 {
     font-weight: 600;
   }
-
+  .history-block-mobile{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+  }
+  .history-block-mobile .container{
+    padding: 30px 10px;
+  }
 
   /*=============================================
                       TEAM
@@ -1383,7 +1390,7 @@ padding: 50px 60px;
     top: 20px;
   }
   .photo-block{
-    margin: 10px 20px;
+    margin: 10px auto;
     float: left;
     text-align: center;
   }
@@ -1727,6 +1734,14 @@ padding: 50px 60px;
   =============================================*/
   .timeline-item-vertical h1 {
     font-weight: 600;
+  }
+  .history-block-mobile{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+  }
+  .history-block-mobile .container{
+    padding: 30px 10px;
   }
 
 
