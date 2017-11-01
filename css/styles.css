@@ -688,7 +688,9 @@ a{
 ========================================================*/
 .photo-wrapper-parent{
   width: 100%;
-  display: inline-block;
+  /*display: inline-block;*/
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .photo-wrapper{
@@ -712,6 +714,11 @@ a{
   width: 200px;
   height: 337px;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex:1;
 }
 
 .photo-pic{
@@ -1353,6 +1360,7 @@ padding: 50px 60px;
   }
   .photo-pic{
     height: 180px;
+    width: 120px;
   }
   .photo-pic > img{
     height: 180px;
@@ -1668,6 +1676,7 @@ padding: 50px 60px;
   }
   .photo-pic{
     height: 180px;
+    width: 120px;
   }
   .photo-pic > img{
     height: 180px;
