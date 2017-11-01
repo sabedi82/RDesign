@@ -1,29 +1,29 @@
 $(function () {
 
     $(".link-Vision").hover(function () {
-        $(".section-description").html("Bayyinah’s mission is to enrich individuals, families and institutions by making Arabic and Qur’anic studies accessible to the world. All of our programs offer comprehensive study resources to guide our students toward their educational goals. We strongly believe that education in both")
+        $(".section-description").html(" Since 2005, Bayyinah Institute has been sharing the message and language of the Quran with the world")
     }, function () {
-        $(".section-description").html("Default mission statement. ")
+        $(".section-description").html("")
     });
     $(".link-History").hover(function () {
-        $(".section-description").html("Nouman Ali Khan starts Bayyinah from his laptop. He begins teaching Fundamentals of Classical Arabic in the New York and New Jersey areas. Later he launches Tajwid and Reading essentials with Wisam Sharieff.")
+        $(".section-description").html("A chronology of Bayyinah Institute")
     }, function () {
-        $(".section-description").html("Default mission statement. ")
+        $(".section-description").html(" ")
     });
     $(".link-Team").hover(function () {
-        $(".section-description").html("Write up description about the Team Section.")
+        $(".section-description").html("An introduction to the dedicated team and creative minds that make up Bayyinah Institute")
     }, function () {
-        $(".section-description").html("Default mission statement. ")
+        $(".section-description").html("")
     });
     $(".link-Gallery").hover(function () {
-        $(".section-description").html("Write up description about the Gallery Section.")
+        $(".section-description").html("A photo gallery featuring traveling seminars, behind-the-scenes, and student life")
     }, function () {
-        $(".section-description").html("Default mission statement. ")
+        $(".section-description").html("")
     });
     $(".link-Blog").hover(function () {
-        $(".section-description").html("Write up description about the Blog Section.")
+        $(".section-description").html("A series of posts highlighting our programs and tackling relevant issues for Muslims everywhere ")
     }, function () {
-        $(".section-description").html("Default mission statement. ")
+        $(".section-description").html("")
     });
 
     var bodyEl = $("body"),
@@ -81,5 +81,42 @@ $(function () {
             bodyEl.toggleClass("active-nav");
             displayed = !displayed;
         }
+    });
+});
+
+$(document).ready(function() {
+    // Configure/customize these variables.
+    var showChar = 192;  // How many characters are shown by default
+    var ellipsestext = "...";
+    var moretext = "Read More >";
+    var lesstext = "Show less";
+
+
+    $('.more').each(function() {
+        var content = $(this).html();
+
+        if(content.length > showChar) {
+
+            var c = content.substr(0, showChar);
+            var h = content.substr(showChar, content.length - showChar);
+
+            var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+
+            $(this).html(html);
+        }
+
+    });
+
+    $(".morelink").click(function(){
+        if($(this).hasClass("less")) {
+            $(this).removeClass("less");
+            $(this).html(moretext);
+        } else {
+            $(this).addClass("less");
+            $(this).html(lesstext);
+        }
+        $(this).parent().prev().toggle();
+        $(this).prev().toggle();
+        return false;
     });
 });

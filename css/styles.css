@@ -17,6 +17,26 @@ a{
 .clear:after {
     clear: both;
 }
+
+.underline-link{
+  color: #0000EE;
+}
+.underline-link a{
+  color: #0000EE;
+}
+.underline-link:visited {
+    color: #0000EE;
+}
+
+.morecontent span {
+    display: none;
+
+}
+.morelink {
+    display: block;
+    color: #0000EE;
+}
+
 /* ========================================================
                       NAVIGATION SECTION
 ========================================================*/
@@ -527,6 +547,21 @@ a{
   color: #841100;
   cursor:pointer;
 }
+
+.department-title a{
+  text-transform: uppercase;
+  text-decoration: none;
+  color:black;
+  margin-bottom: 0;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+
+.department-title a:hover{
+  color: #841100;
+  cursor:pointer;
+}
 .underline-title{
   color: #841100;
   font-size: 15pt;
@@ -986,7 +1021,7 @@ padding: 50px 60px;
   background-repeat: no-repeat;
 }
 /* ================================================
-                    BLOG - Article One
+                    BLOG - Articles
 ===================================================*/
 
 .a1-hero-background {
@@ -1024,8 +1059,24 @@ padding: 50px 60px;
   background-repeat: no-repeat;
 }
 
+.blog-title-holder .social-icons{
+  padding: 0px 80px;
+  width: 100%;
+}
+
+.blog-title-holder .social-icons ul{
+  margin-top: 2em;
+}
+
+
+.blog-top-half{
+  width: 100%;
+  border-bottom: 7px solid #841100;
+  margin-bottom: 40px;
+}
+
 .blog-body-wrapper{
-  padding: 70px 80px;
+  padding: 10px 80px;
 }
 
 .blog-main-body p{
@@ -1046,6 +1097,7 @@ padding: 50px 60px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  ma
 }
 
 .youtube-icon-title img{
