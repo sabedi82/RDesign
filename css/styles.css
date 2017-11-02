@@ -1251,7 +1251,7 @@ padding: 10px 60px 150px 60px;
     background-color: rgba(0, 0, 0, 0);
     padding: 10px;
     color:white;
-    width: 100%;
+    width: 50%;
   }
 
   .navigation-menu {
@@ -1644,6 +1644,13 @@ padding: 10px 60px 150px 60px;
   .newsletter-input-tab{
     display: none;
   }
+  .newsletter-input input{
+    width: 50%;
+  }
+  .newsletter-button{
+    width: 50%;
+  }
+
   .navigation-menu {
     width: 100%;
   }
