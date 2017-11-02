@@ -198,6 +198,18 @@ a{
   display: none;
 }
 
+.newsletter-input input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white;
+}
+.newsletter-input input::-moz-placeholder { /* Firefox 19+ */
+  color: white;
+}
+.newsletter-input input:-ms-input-placeholder { /* IE 10+ */
+  color: white;
+}
+.newsletter-input input:-moz-placeholder { /* Firefox 18- */
+  color: white;
+}
 /* ========================================================
                       HEADER SECTION
 ========================================================*/

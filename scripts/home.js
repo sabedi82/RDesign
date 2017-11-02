@@ -38,6 +38,9 @@ $(function () {
                 e.preventDefault();
             }
         };
+    $("#email").on("click", function(e){
+        e.stopPropagation();
+    });
 
     navToggleBtn.on("click", toggle_menu);
     var path = window.location.pathname;
@@ -77,7 +80,10 @@ $(function () {
     );
 
 
-    $(window).click(function () {
+    $(window).click(function (e) {
+        if (e.target.type == 'email' || e.target.type == 'submit'){
+            return;
+        }
         if (displayed) {
             bodyEl.toggleClass("active-nav");
             displayed = !displayed;
@@ -121,7 +127,9 @@ $(document).ready(function() {
         return false;
     });
 
-    jQuery("#gallery").unitegallery({
-        gallery_width:'100%',
-    });
+    if ($("#gallery")) {
+        jQuery("#gallery").unitegallery({
+            gallery_width: '100%'
+        });
+    }
 });
