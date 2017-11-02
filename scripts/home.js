@@ -30,8 +30,8 @@ $(function () {
         navToggleBtn = bodyEl.find(".menu-logo"),
         displayed = true,
         toggle_menu = function (e) {
-            bodyEl.toggleClass("active-nav");
             $("body").find("section.hidden").removeClass('hidden');
+            setTimeout(function(){bodyEl.toggleClass("active-nav")}, 10);
             displayed = !displayed;
             if (e) {
                 e.stopPropagation();
@@ -46,8 +46,26 @@ $(function () {
     var path = window.location.pathname;
     var page = path.split("/").pop();
     console.log(page);
-    if (page != 'index.html') {
-        toggle_menu();
+    if (page == 'index.html') {
+        $(".link-Vision>a").toggleClass('bold');
+        if (typeof(Cookies) != "undefined") {
+            var val = Cookies.get('b_com_menu'); // => 'value'
+            if (val != "1") {
+                //bodyEl.toggleClass("active-nav");
+                toggle_menu();
+                bodyEl.find("section.hidden").removeClass('hidden');
+                console.log(Cookies.set("b_com_menu", "1"));
+                $(".section-description").html(" Since 2005, Bayyinah Institute has been sharing the message and language of the Quran with the world")
+            }
+        }
+    }else if(page == "history.html"){
+        $(".link-History>a").toggleClass('bold');
+    }else if(page == "team.html"){
+        $(".link-Team>a").toggleClass('bold');
+    }else if(page == "Gallery.html"){
+        $(".link-Gallery>a").toggleClass('bold');
+    }else if(page == "Blog.html"){
+        $(".link-Blog>a").toggleClass('bold');
     }
 
 
@@ -84,7 +102,10 @@ $(function () {
         if (e.target.type == 'email' || e.target.type == 'submit'){
             return;
         }
-        if (displayed) {
+        if (e.target.tagName.toLowerCase() == "a" && e.target.getAttribute('target') == "_blank"){
+            return;
+        }
+        if (!displayed) {
             bodyEl.toggleClass("active-nav");
             displayed = !displayed;
         }
