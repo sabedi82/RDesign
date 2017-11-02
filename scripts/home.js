@@ -89,6 +89,21 @@ $(function () {
             displayed = !displayed;
         }
     });
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 50,
+                header = $(document.querySelector("header"));
+            if (distanceY > shrinkOn) {
+                header.addClass('smaller')
+            } else {
+                if (header.hasClass("smaller")) {
+                    header.removeClass("smaller");
+                }
+            }
+        });
+    }
+    window.onload = init();
 });
 
 $(document).ready(function() {
@@ -127,7 +142,7 @@ $(document).ready(function() {
         return false;
     });
 
-    if ($("#gallery")) {
+    if ($("#gallery").attr('id') == 'gallery') {
         jQuery("#gallery").unitegallery({
             gallery_width: '100%'
         });
