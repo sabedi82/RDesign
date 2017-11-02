@@ -184,7 +184,14 @@ a{
   background-color: rgba(0, 0, 0, 0);
   padding: 10px;
   color:white;
-  width: 100%;
+  width: 50%;
+}
+.newsletter-button{
+  border: 1px solid white;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 10px;
+  color:white;
+  width: 30%;
 }
 
 .middle-section>.newsletter-input{
@@ -1705,8 +1712,15 @@ padding: 10px 60px 150px 60px;
   }
 
   .middle-section > .newsletter-input {
-    display: block;
+    display: inline-block;
     margin-top: 2em;
+  }
+  .newsletter-input input{
+    width: 100%;
+  }
+  .newsletter-button{
+    margin-top: 10px;
+    width: 100%;
   }
   .sm-logo img {
     margin-right: 20px;
