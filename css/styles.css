@@ -1571,7 +1571,7 @@ padding: 10px 60px 150px 60px;
   .gallery-section {
     padding: 0 10px 0 10px;
   }
-  .live-events-gallery{
+  .live-events-gallery, .behind-the-scenes-gallery, .student-life-gallery{
     height: 180px;
   }
 
