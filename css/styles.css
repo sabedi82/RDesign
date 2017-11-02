@@ -257,7 +257,7 @@ a{
   border-bottom: 3px solid #841100;
   padding-bottom:10px;
   color: black;
-  font-size: 8px;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 1px;
 }
@@ -536,7 +536,7 @@ a{
   letter-spacing: 6.2pt;
 }
 .section-image-text-small{
-  font-size: 24pt;
+  font-size: 48pt;
 }
 
 .section-image-text::after{
@@ -1075,7 +1075,7 @@ padding: 10px 60px 150px 60px;
 .a1-hero-background {
   width: 100%;
   margin:0 auto;
-  max-width: 1280px;
+  /*max-width: 1280px;*/
   height: 699px;
   background-image: url("../Assets/article-one-bg.jpg");
   background-size: cover;
@@ -1084,7 +1084,7 @@ padding: 10px 60px 150px 60px;
 }
 .a2-hero-background{
   width: 100%;
-  max-width: 1280px;
+  /*max-width: 1280px;*/
   height: 699px;
   background-image: url("../Assets/article-two-bg.jpg");
   background-size: cover;
@@ -1094,7 +1094,7 @@ padding: 10px 60px 150px 60px;
 
 .a3-hero-background{
   width: 100%;
-  max-width: 1280px;
+  /*max-width: 1280px;*/
   height: 699px;
   background-image: url("../Assets/article-three-bg.jpg");
   background-size: cover;
@@ -1104,7 +1104,7 @@ padding: 10px 60px 150px 60px;
 
 .a4-hero-background{
   width: 100%;
-  max-width: 1280px;
+  /*max-width: 1280px;*/
   height: 699px;
   background-image: url("../Assets/article-four-bg.jpg");
   background-size: cover;
@@ -1113,8 +1113,10 @@ padding: 10px 60px 150px 60px;
 }
 
 .blog-title-holder .social-icons{
-  padding: 0px 80px;
+  padding: 20px 80px;
   width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .blog-title-holder .social-icons ul{
@@ -1130,6 +1132,8 @@ padding: 10px 60px 150px 60px;
 
 .blog-body-wrapper{
   padding: 10px 80px;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .blog-main-body p{
@@ -1224,7 +1228,7 @@ padding: 10px 60px 150px 60px;
   ==================================*/
   .a1-hero-background {
     width: 100%;
-    max-width: 1280px;
+    /*max-width: 1280px;*/
     height: 360px;
     max-height: 700px;
   }
@@ -1291,7 +1295,7 @@ padding: 10px 60px 150px 60px;
   ==================================*/
   .a1-hero-background {
     width: 100%;
-    max-width: 1280px;
+    /*max-width: 1280px;*/
     height: 500px;
     max-height: 700px;
   }
@@ -1715,7 +1719,7 @@ padding: 10px 60px 150px 60px;
   }
   .a1-hero-background {
     width: 100%;
-    max-width: 1280px;
+    /*max-width: 1280px;*/
     height: 230px;
     max-height: 700px;
   }
