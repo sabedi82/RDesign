@@ -870,6 +870,9 @@ a{
 .gallery-section{
 padding: 10px 60px 150px 60px;
 }
+.gallery-section-image{
+  box-shadow: 7px -7px #841100;
+}
 .live-events-gallery{
   background : -moz-linear-gradient(0% 50% 0deg,rgba(0, 0, 0, 0.8) 0%,rgba(0, 0, 0, 0.2) 100%);
   background : -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%);
@@ -1268,7 +1271,7 @@ padding: 10px 60px 150px 60px;
   ====================================
   */
   .gallery-wrapper{
-    padding: 0 15px 200px 15px;
+    padding: 0 15px 00px 15px;
     top: 0;
   }
   .gallery-section {
@@ -1670,7 +1673,7 @@ padding: 10px 60px 150px 60px;
  ====================================
  */
   .gallery-wrapper{
-    padding: 0 15px 200px 15px;
+    padding: 0 15px 0px 15px;
     top: 0;
   }
   .gallery-section {
@@ -1679,7 +1682,9 @@ padding: 10px 60px 150px 60px;
   .live-events-gallery, .behind-the-scenes-gallery, .student-life-gallery{
     height: 180px;
   }
-
+  .gallery-section-image {
+    box-shadow: 4px -4px #841100;
+  }
   /*==============================
   BLOG
   ===============================*/

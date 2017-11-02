@@ -144,7 +144,16 @@ $(document).ready(function() {
 
     if ($("#gallery").attr('id') == 'gallery') {
         jQuery("#gallery").unitegallery({
-            gallery_width: '100%'
+            tile_enable_shadow:false,
+            tile_enable_border:true,
+            tiles_space_between_cols:15,
+            tiles_justified_space_between:15,
+            tiles_col_width:235,
+            tile_border_color: "#ffffff",
+            tile_enable_outline:false,
+            theme_gallery_padding:15,
+            tiles_type: "justified"
+
         });
     }
 });
