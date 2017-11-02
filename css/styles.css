@@ -441,7 +441,7 @@ a{
   background : -ms-linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000' ,GradientType=0)";
   background : linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%),
-  url("../Assets/Gallery-Background-Image.png")center; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  url("../Assets/Gallery-Background-Image.jpg")center; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000',endColorstr='#000000' , GradientType=1);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1378,6 +1378,7 @@ padding: 10px 60px 150px 60px;
   }
 
   .main-section-image {
+    margin-top: -10px;
     height: 350px;
   }
 
@@ -1411,6 +1412,7 @@ padding: 10px 60px 150px 60px;
   .left-section .menu-logo, .left-section {
     color: rgba(255,255,255,0.6)
   }
+
 
   .right-section {
     display: none;
@@ -1473,6 +1475,10 @@ padding: 10px 60px 150px 60px;
     padding-top: 15px;
     position: relative;
     z-index: 2;
+    height: 130px;
+    background-color: white;
+    position: fixed;
+    width: 100%;
   }
 
   .header2 > .menu_class {
@@ -1483,7 +1489,7 @@ padding: 10px 60px 150px 60px;
   }
 
   a.white {
-    color: #ffffff !important;
+    color: #000 !important;
   }
 
   .header2 > .menu_class > a {
@@ -1600,7 +1606,7 @@ padding: 10px 60px 150px 60px;
   .main-section-image {
     width: 100%;
     left: initial;
-    margin-top: -80px;
+    margin-top: -20px;
     z-index: 1;
   }
 
@@ -1897,17 +1903,29 @@ padding: 10px 60px 150px 60px;
 
   .header2 > .menu_class {
     display: inline-block;
-    padding: 13px;
+    padding: 30px;
     font-size: 9pt;
     font-weight: 500;
-    position: fixed;
-    background: rgba(0,0,0,0.6);
+    /*position: fixed;*/
+    /*background: rgba(0,0,0,0.6);*/
     top: 20px;
     left: 30px;
+
   }
 
   a.white {
-    color: #ffffff !important;
+    color: #000 !important;
+  }
+
+  .header2 {
+    display: block;
+    padding-top: 25px;
+    position: relative;
+    z-index: 2;
+    height: 130px;
+    background-color: white;
+    position: fixed;
+    width: 100%;
   }
 
   .header2 > .menu_class > a {
@@ -1927,6 +1945,7 @@ padding: 10px 60px 150px 60px;
   }
 
   .header_logo_class > img {
+    padding-top: 15px;
     width: 100px;
   }
 
