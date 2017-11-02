@@ -861,7 +861,7 @@ a{
 .gallery-wrapper{
   top: 4em;
   position: relative;
-  padding: 10px 0px 150px 0px;
+  padding: 10px 0px 0px 0px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
