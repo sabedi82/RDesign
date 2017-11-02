@@ -31,6 +31,7 @@ $(function () {
         displayed = true,
         toggle_menu = function (e) {
             bodyEl.toggleClass("active-nav");
+            $("body").find("section.hidden").removeClass('hidden');
             displayed = !displayed;
             if (e) {
                 e.stopPropagation();
@@ -118,5 +119,9 @@ $(document).ready(function() {
         $(this).parent().prev().toggle();
         $(this).prev().toggle();
         return false;
+    });
+
+    jQuery("#gallery").unitegallery({
+        gallery_width:'100%',
     });
 });

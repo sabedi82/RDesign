@@ -502,6 +502,9 @@ a{
   text-transform: uppercase;
   letter-spacing: 6.2pt;
 }
+.section-image-text-small{
+  font-size: 24pt;
+}
 
 .section-image-text::after{
   width: 60px;
@@ -834,14 +837,14 @@ a{
 .gallery-wrapper{
   top: 4em;
   position: relative;
-  padding: 50px 40px;
+  padding: 10px 0px 150px 0px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
 }
 
 .gallery-section{
-padding: 50px 60px;
+padding: 10px 60px 150px 60px;
 }
 .live-events-gallery{
   background : -moz-linear-gradient(0% 50% 0deg,rgba(0, 0, 0, 0.8) 0%,rgba(0, 0, 0, 0.2) 100%);
@@ -861,6 +864,7 @@ padding: 50px 60px;
   height: 350px;
   /*position: relative;
   top: -2em;*/
+  text-align: center;
 }
 .life-events-gallery::before {
   display: block;
@@ -1002,7 +1006,7 @@ padding: 50px 60px;
 
 .article-one .blog-article-background{
   background-image:url("../Assets/article-one-bg.jpg");
-  background-size: 100%;
+  background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
 
@@ -1123,7 +1127,9 @@ padding: 50px 60px;
     display: inline-block;
 }
 
-
+.hidden{
+  display: none;
+}
 /* ==============================================
                  MEDIA QUERIES
 ================================================*/
@@ -1175,6 +1181,17 @@ padding: 50px 60px;
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
 
+  /* ==============================
+  GALLERY
+  ====================================
+  */
+  .gallery-wrapper{
+    padding: 0 15px 200px 15px;
+    top: 0;
+  }
+  .gallery-section {
+    padding: 50px 10px 0 10px;
+  }
   /* ========================================
   BLOGS
   ==================================*/
@@ -1542,6 +1559,22 @@ padding: 50px 60px;
 }
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
+
+  /* ==============================
+ GALLERY
+ ====================================
+ */
+  .gallery-wrapper{
+    padding: 0 15px 200px 15px;
+    top: 0;
+  }
+  .gallery-section {
+    padding: 0 10px 0 10px;
+  }
+  .live-events-gallery{
+    height: 180px;
+  }
+
   /*==============================
   BLOG
   ===============================*/
