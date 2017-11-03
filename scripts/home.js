@@ -46,7 +46,7 @@ $(function () {
     var path = window.location.pathname;
     var page = path.split("/").pop();
     console.log(page);
-    if (page == 'index.html') {
+    if (page == 'index.html' || page == '') {
         $(".link-Vision>a").toggleClass('bold');
         if (typeof(Cookies) != "undefined") {
             var val = Cookies.get('b_com_menu'); // => 'value'
