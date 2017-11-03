@@ -123,6 +123,19 @@ $(function () {
                 }
             }
         });
+        window.addEventListener('resize', function(e){
+            $(".photo-title").removeClass('padding-left-17');
+            var big_blogs = $(".photo-block").filter(function () {
+                return $(this).width() > 343;
+            });
+            $.each(big_blogs, function(idx){
+                var element = $(big_blogs[idx]);
+                var title = element.find(".photo-title");
+                if (!title.hasClass('padding-left-17')){
+                    title.addClass('padding-left-17');
+                }
+            });
+        });
     }
     window.onload = init();
 });
