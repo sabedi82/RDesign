@@ -3,27 +3,27 @@ $(function () {
     $(".link-Vision").hover(function () {
         $(".section-description").html(" Since 2005, Bayyinah Institute has been sharing the message and language of the Quran with the world")
     }, function () {
-        $(".section-description").html("")
+        $(".section-description").html(" Since 2005, Bayyinah Institute has been sharing the message and language of the Quran with the world")
     });
     $(".link-History").hover(function () {
         $(".section-description").html("A chronology of Bayyinah Institute")
     }, function () {
-        $(".section-description").html(" ")
+        $(".section-description").html(" Since 2005, Bayyinah Institute has been sharing the message and language of the Quran with the world")
     });
     $(".link-Team").hover(function () {
         $(".section-description").html("An introduction to the dedicated team and creative minds that make up Bayyinah Institute")
     }, function () {
-        $(".section-description").html("")
+        $(".section-description").html(" Since 2005, Bayyinah Institute has been sharing the message and language of the Quran with the world")
     });
     $(".link-Gallery").hover(function () {
         $(".section-description").html("A photo gallery featuring traveling seminars, behind-the-scenes, and student life")
     }, function () {
-        $(".section-description").html("")
+        $(".section-description").html(" Since 2005, Bayyinah Institute has been sharing the message and language of the Quran with the world")
     });
     $(".link-Blog").hover(function () {
         $(".section-description").html("A series of posts highlighting our programs and tackling relevant issues for Muslims everywhere ")
     }, function () {
-        $(".section-description").html("")
+        $(".section-description").html(" Since 2005, Bayyinah Institute has been sharing the message and language of the Quran with the world")
     });
 
     var bodyEl = $("body"),
