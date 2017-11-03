@@ -4,6 +4,7 @@
 *{
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
 }
 a{
   text-decoration: none;
@@ -127,13 +128,13 @@ a{
 }
 
 .main-links li a{
-  font-weight: 200;
+  font-weight: 300;
   text-transform: uppercase;
   margin-top: 0px;
   text-decoration: none;
   color: white;
   list-style: none;
-  font-size: 18px;
+  font-size: 22px;
 }
 
 .main-links ul{
@@ -167,26 +168,30 @@ a{
 .right-section{
   width:45%;
   padding-top: 60px;
-  font-weight: 100;
+  font-weight: 200;
 }
 .section-title{
   font-weight: 300;
-  font-size: 12px;
+  font-size: 14px;
   text-transform: uppercase;
   margin-top: 5px;
   margin-bottom: 31px;
+}
+.section-description{
+  font-weight: 200;
 }
 .right-section .section-description{
   line-height: 1.9;
 }
 .newsletter-input{
-  font-weight: 100;
+  font-weight: 200;
   font-size: 14px;
   margin-top: 7em;
 }
 
 .newsletter-input p{
   margin-bottom: 15px;
+  font-weight: 200;
 }
 .newsletter-input input{
   border: 1px solid white;
@@ -531,6 +536,7 @@ a{
   left: 100px;
   bottom: 0;
   font-size: 48pt;
+  font-weight: 600;
   color: white;
   text-transform: uppercase;
   letter-spacing: 6.2pt;
@@ -743,6 +749,12 @@ a{
   flex: 1 1 auto;
   margin: 20px auto 110px;
   margin-top: 20px;
+}
+.photo-wrapper>div:first-child{
+  width: 34%;
+}
+.photo-wrapper>div:nth-child(2){
+  width: 34%;
 }
 
 .photo-block{
@@ -961,7 +973,7 @@ padding: 10px 60px 150px 60px;
   display: none;
 }
 .term_links{
-  font-weight: 100;
+  font-weight: 200;
   text-transform: uppercase;
   font-size: 10pt;
 }
@@ -1047,7 +1059,7 @@ padding: 10px 60px 150px 60px;
 }
 
 .article-one .blog-article-background{
-  background-image:url("../Assets/article-one-bg.jpg");
+  background-image:url("../Assets/A1%20thumbnail.jpg");
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -1055,21 +1067,21 @@ padding: 10px 60px 150px 60px;
 }
 
 .article-two .blog-article-background{
-  background-image:url("../Assets/article-two-bg.jpg");
+  background-image:url("../Assets/A2%20thumbnail.jpg");
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
 
 .article-three .blog-article-background{
-  background-image:url("../Assets/article-three-bg.jpg");
+  background-image:url("../Assets/A3%20thumbnail.jpg");
   background-size: 100%;
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
 
 .article-four .blog-article-background{
-  background-image:url("../Assets/article-four-bg.jpg");
+  background-image:url("../Assets/A4%20thumbnail.jpg");
   background-size: 100%;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -1368,7 +1380,7 @@ padding: 10px 60px 150px 60px;
   }
   .newsletter-input-tab{
     display: block;
-    font-weight: 100;
+    font-weight: 200;
     font-size: 19px;
     margin-top: 7em;
   }
@@ -1411,7 +1423,7 @@ padding: 10px 60px 150px 60px;
     display: none;
   }
   .cross{
-    font-weight: 100;
+    font-weight: 200;
     /*font-family: unset;*/
     display: block;
   }
@@ -1539,7 +1551,7 @@ padding: 10px 60px 150px 60px;
     transition: all 0.3s;
   }
 
-  .header2 > .header_logo_class > img {
+  .header2 > .header_logo_class > a > img {
     width: 140px;
   }
 
@@ -1574,7 +1586,7 @@ padding: 10px 60px 150px 60px;
     transition: all 0.3s;
 
   }
-  .smaller>.header2>.header_logo_class > img {
+  .smaller>.header2>.header_logo_class > a > img {
     padding-top: 0;
     width: 70px;
     -webkit-transition: all 0.3s;
@@ -1874,7 +1886,7 @@ padding: 10px 60px 150px 60px;
   }
 
   .main-section-image {
-    height: 350px;
+    height: 450px;
   }
 
   .floating-section-box {
@@ -2069,7 +2081,7 @@ padding: 10px 60px 150px 60px;
     transition: all 0.3s;
 
   }
-  .smaller>.header2>.header_logo_class > img {
+  .smaller>.header2>.header_logo_class > a > img {
     padding-top: 0;
     width: 70px;
     -webkit-transition: all 0.3s;
@@ -2079,7 +2091,7 @@ padding: 10px 60px 150px 60px;
     transition: all 0.3s;
 
   }
-  .header_logo_class > img {
+  .header_logo_class > a > img {
     padding-top: 15px;
     width: 100px;
   }

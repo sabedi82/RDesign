@@ -110,6 +110,21 @@ $(function () {
             displayed = !displayed;
         }
     });
+
+    function on_resize(){
+        $(".photo-title").removeClass('padding-left-17');
+        var big_blogs = $(".photo-block").filter(function () {
+            return $(this).width() > 343;
+        });
+        $.each(big_blogs, function(idx){
+            var element = $(big_blogs[idx]);
+            var title = element.find(".photo-title");
+            if (!title.hasClass('padding-left-17')){
+                title.addClass('padding-left-17');
+            }
+        });
+    }
+
     function init() {
         window.addEventListener('scroll', function(e){
             var distanceY = window.pageYOffset || document.documentElement.scrollTop,
@@ -123,21 +138,10 @@ $(function () {
                 }
             }
         });
-        window.addEventListener('resize', function(e){
-            $(".photo-title").removeClass('padding-left-17');
-            var big_blogs = $(".photo-block").filter(function () {
-                return $(this).width() > 343;
-            });
-            $.each(big_blogs, function(idx){
-                var element = $(big_blogs[idx]);
-                var title = element.find(".photo-title");
-                if (!title.hasClass('padding-left-17')){
-                    title.addClass('padding-left-17');
-                }
-            });
-        });
+        window.addEventListener('resize', on_resize);
     }
     window.onload = init();
+    on_resize();
 });
 
 $(document).ready(function() {
